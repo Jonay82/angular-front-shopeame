@@ -1,0 +1,81 @@
+.container-logo{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    background-color: rgb(4, 6, 6);
+}
+
+.box-logo{
+    display:flex;
+    height: 50px;
+    //flex-wrap: wrap;
+    //flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    //align-items: center;
+}
+
+.back-S{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-image:linear-gradient(to right, rgb(174, 199, 255), blue);
+    border-radius: 5px;
+}
+
+.S{   
+    display: flex;
+    font-weight: 700;
+    font-size: 25px;
+    //line-height: 36px;
+    //font-style: normal;
+    
+    /* or 112% */   
+    align-items: center;
+    text-align: center;
+    
+    /* White 100% */
+    color: #FFFFFF;
+}
+
+.Sho{
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    
+    /* Blue / 100 */
+    color: #0C2146;
+}
+/*
+.enlace-logo{
+   
+    background-color: blue;
+}
+
+.letter{
+   //display: flex;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 5px;
+}
+.name{
+    //display: flex;
+    width: 186px;
+    height: 36px;
+}
+*/

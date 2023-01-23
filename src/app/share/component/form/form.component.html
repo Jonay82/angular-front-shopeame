@@ -1,0 +1,43 @@
+<body>
+
+<div class="container">
+
+    <h2>Creación/edición de productos</h2>
+<!-- formGroup es el nombre de nuestro formFroup del .ts -->
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="productregister">
+  <!-- Fieldset del primer campo - name -->
+	<fieldset>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" formControlName="name" />
+		<!-- Si el campo name es invalido / ha sido tocado / submitted = true -->
+    <div *ngIf="!productregister.get('name')?.valid &&
+        (productregister.get('name')?.dirty || submitted)">
+      Has introducido mal tu nombre
+    </div>
+  </fieldset>
+	
+	<!-- Fieldset del segundo campo - password -->
+	<fieldset>
+    <label for="price">Precio:</label>
+    <input type="number" id="price" formControlName="price" />
+		<!-- Si el campo password es invalido / ha sido password / submitted = true -->
+    <div *ngIf="!productregister.get('price')?.valid &&
+        (productregister.get('price')?.dirty || submitted)">
+      Has introducido mal tu contraseña
+    </div>
+  </fieldset>
+
+	<!-- Fieldset del segundo campo - repeatPassword -->
+	<fieldset>
+    <label for="description">descripcion:</label>
+    <input type="text" id="descrption" />
+		
+    </div>
+  </fieldset>
+
+	<!-- Botón deshabilitado hasta que el formulario sea valid -->
+	<button type="submit" [disabled]="!productregister.valid">Submit</button>
+
+</form>
+
+</div>
